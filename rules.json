@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://www.bing.com\\2\\3"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(www\\.)?google\\.com(/search)(\\?.*)?$",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://www.bing.com/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(www\\.)?google\\.com/?$",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
